@@ -36,6 +36,7 @@ const pringReadings2 = (a: number[] | string) => {
    
 }
 
+// определяем существует ли свойство в объекте
 function checkReadings (readings: {system: number} | {user: number}) : void {
     if ('system' in readings) {
         console.log(readings.system); //если она есть
@@ -46,7 +47,7 @@ function checkReadings (readings: {system: number} | {user: number}) : void {
     }
 }
 
-//сужение типов с помощью instanceof
+//сужение типов с помощью instanceof, определяем является ли аргумент экземпляром Date
 function logValue (x: string | Date) {
     if(x instanceof Date) {
         console.log(x.getDate());

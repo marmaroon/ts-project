@@ -40,8 +40,8 @@ const createError = (msg: string) => { // type never
     throw new Error(msg);
 }
 
-const logMsg = ({ isBirthdayData, userNameData, ageData, messages: { error } }: { // деструктуризация
-    isBirthdayData: boolean;
+const logMsg = ({ isBirthdayData, userNameData, ageData, messages: { error } }: { // деструктуризация 
+    isBirthdayData: boolean; // аннотация объекта при использовании в функции
     userNameData: string
     ageData: number;
     messages: { error: string }
@@ -55,14 +55,14 @@ const logMsg = ({ isBirthdayData, userNameData, ageData, messages: { error } }: 
 
 console.log(logMsg(userData));
 
-const departments: string[] = ['dev', 'design', 'marketing']; // тип массив, состоящий из строковых типов данных
+const departments: string[] = ['dev', 'design', 'marketing']; // тип: массив, состоящий из строковых типов данных
 
 const department = departments[0];
 
 // departments.push(5)
 const report = departments
     .filter((d: string) => d!== 'dev')
-    .map(d => `${d} - done`)
+    .map((d: string) => `${d} - done`)
 
 const nums: number[][] = [[3, 6, 8], [3, 6, 8]]; // матрица - массив, в котором есть другие подмассивы с данными
 
