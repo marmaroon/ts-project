@@ -20,8 +20,24 @@ function startServer(
 
 startServer('https', 3001)
 
-function createAnimation(id: string | number,) {
-    const elem = document.querySelector(`#${id}`);
-    elem.style.animation = '';
-    
+// псевдонимы типов, для переиспользования? 
+type AnimationTimingFunc = 'ease' | 'ease-out' | 'ease-in';
+type AnimationID = string | number
+
+// работа с dom элементами
+function createAnimation(id: AnimationID,
+    animName: string,
+    timingFunc: AnimationTimingFunc = 'ease',
+    duration: number,
+    iterCount: 'infinite' | number
+): void {
+    // const elem = document.querySelector(`#${id}`) as HTMLElement; // конкретно прописываем что это html элемент
+    // if (elem) {
+    console.log(`${animName} ${timingFunc} ${duration} ${iterCount}`);
+
+    // elem.style.animation = `${animName} ${timingFunc} ${duration} ${iterCount}`; // если элемент не найден на странице, то он заменяется на null
+    // }
+
 }
+
+createAnimation('id', 'fade', 'ease-in', 5, 'infinite')
