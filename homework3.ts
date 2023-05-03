@@ -53,3 +53,9 @@ function printReport(data: TotalWarehouse): string {
 }
 
 console.log(printReport(totalData));
+
+// Если создавать переменные с примитивными
+// литералами через const, то вывод типов определит их как литерал. Если
+// через let - то как общий тип (string, number, boolean...)
+const ne = true
+let da = false
