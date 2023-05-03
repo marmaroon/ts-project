@@ -25,7 +25,7 @@ printMsg(4)
 
 //сужение типов
 const pringReadings = (a: number | string, b: number | boolean) => {
-    if(a === b) {
+    if(a === b) { // здесь последовательное сравнение?
         console.log(a, b);
         
     }
