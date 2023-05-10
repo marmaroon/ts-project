@@ -69,5 +69,14 @@ const nums: number[][] = [[3, 6, 8], [3, 6, 8]]; // матрица - масси�
 const [first] = report; //деструтуризация массива, вытаскиваем первый элемент
 console.log(first);
 
-let salary;
-salary = 30000.
+// переопределение типа
+let isOkay = true;
+let movement: boolean | string = false
+
+if(isOkay) {
+    movement = 'moving'
+}
+
+// через const без аннотации выводится литерал
+const salary = 500
+const money: number = 300
