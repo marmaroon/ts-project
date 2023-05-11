@@ -12,3 +12,6 @@ function checkReadings(data: typeof dataFromControl): boolean {
         return true
     } else return false;
 }
+
+const PI = 3.14
+let PIClone: typeof PI;
