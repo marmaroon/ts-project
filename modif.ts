@@ -27,7 +27,7 @@ const userFreeze: Readonly<User> = {
 let dbName: string;
 sendUserData(user, 'wedwer')
 
-console.log(dbName!); //non null, точно существует, например, когда функция синхронна
+console.log(dbName); //non null, точно существует, например, когда функция синхронна
 
 
 function sendUserData (obj: User, db?: string): void {
