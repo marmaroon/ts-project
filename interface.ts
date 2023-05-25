@@ -12,11 +12,11 @@ interface IRole1 {
     role: string;
 }
 
-interface IConfig1 { // используем если, например, импортим какой-то объект и нет исходников, а нам нужно добавить какое-то свойство
+interface IConfig1 {
     date: Date
 }
 
-interface ConfigWithRole1 extends IConfig1, IRole1 { // мы можем добавлять на любых этапах?
+interface ConfigWithRole1 extends IConfig1, IRole1 {
     test: string
 }
 

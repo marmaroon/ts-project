@@ -109,11 +109,23 @@ class Customer<T,S> {
         this.name = name
         this.age = age
     }
+    sayMyFullName<T>(surname: T): string {
+        if (typeof surname != 'string') {
+            return `If I have only name: ${this.name}`
+        } else {
+            return `${this.name} ${surname}`
+        }
+    }
+}
+
+class AdminUser<T> extends Customer<string, number> {
+    rules: T;
 }
 
 const ivan = new Customer('Ivan', 30)
-console.log(ivan);
+console.log(ivan.sayMyFullName('Smith'));
 
-const nameData - 
+const nameData = 'Alex'
+const ageDataNew = 30
 
-const john = new Customer<string, number>('John', 25)
+const john = new Customer<string, number>(nameData, ageDataNew) //прописываем какие конкретно типы должны приходить в конструктор

@@ -16,7 +16,7 @@ function fetchData(data: unknown): void {
 
 const userDataNew = '{"isBirthdayData": true, "ageData": 40, "userNameData": "John"}'
 
-function safeParse (s: string) : unknown { // здесь мы прописываем чтобы он вернул именно в unknown, а не в any?
+function safeParse (s: string) : unknown {
     return JSON.parse(s)
 }
 

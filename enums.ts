@@ -1,14 +1,14 @@
 const TOP = 'Top'
 const RIGHT = 'Right'
 
-enum Directions { // в чем разница, если мы можем использовать type или interface?
+enum Directions {
     TOP,
     RIGHT,
     LEFT,
     BOTTOM
 }
 
-const enum TimingFunc { // через const быстрее выполняется, но в документации напсиано лучше не использовать
+const enum TimingFunc { 
     EASE = 'ease',
     EASE_IN = `${EASE}-in`,
     LINEAR = 'linear',
