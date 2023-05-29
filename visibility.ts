@@ -24,7 +24,6 @@ class CompetitivePlayer extends Player {
 
 const player = new CompetitivePlayer();
 player.password = '123123q'
-player.consent
 
 // class UserPlay {
 //     public email!: string;
@@ -36,7 +35,7 @@ player.consent
 //     }
 // }
 
-class UserPlay {
-    constructor(public email: string, public name: string) {} //эквивалентно предыдущему, но короче
-}
+// class UserPlay {
+//     constructor(public email: string, public name: string) {} //эквивалентно предыдущему, но короче
+// }
 
