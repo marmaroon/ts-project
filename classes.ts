@@ -48,7 +48,7 @@ firstBox.volume = 50000;
 // console.log(firstBox.content = 'Test');
 // console.log(firstBox.content);
 
-class PresentBox extends Box { //а если надо изменить свойства, но я хочу взять за основу класс?
+class PresentBox extends Box {
     wrap: string;
     height: number = 600
 
